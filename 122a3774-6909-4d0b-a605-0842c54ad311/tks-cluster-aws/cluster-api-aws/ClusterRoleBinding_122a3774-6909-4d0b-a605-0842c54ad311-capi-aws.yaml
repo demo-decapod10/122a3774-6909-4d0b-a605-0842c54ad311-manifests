@@ -1,0 +1,13 @@
+# Source: cluster-api-aws/templates/rbac.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: 122a3774-6909-4d0b-a605-0842c54ad311-capi-aws
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: 122a3774-6909-4d0b-a605-0842c54ad311-capi-aws
+subjects:
+- kind: ServiceAccount
+  name: 122a3774-6909-4d0b-a605-0842c54ad311-capi-aws
+  namespace: 122a3774-6909-4d0b-a605-0842c54ad311
